@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Buzz Wrapped</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+        
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.9; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            33% { transform: translateY(-15px) rotate(5deg); }
+            66% { transform: translateY(-5px) rotate(-5deg); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        
+        .text-line {
+            opacity: 0;
+        }
+        
+        .text-line.visible {
+            animation: slideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+        
+        .disco-spin {
+            animation: spin 20s linear infinite;
+            transform-origin: center center;
+        }
+        
+        .float-anim {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .rotate-safe {
+            width: 150vmax !important;
+            height: 150vmax !important;
+            min-width: 150vmax !important;
+            min-height: 150vmax !important;
+        }
+        
+        .bounce-anim {
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        .pulse-anim {
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 3s linear infinite;
+        }
+        
+        .gradient-bg-1 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-bg-2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .gradient-bg-3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .gradient-bg-4 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        
+        .gradient-bg-5 {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .gradient-bg-6 {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+        }
+        
+        .gradient-bg-7 {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        .gradient-bg-8 {
+            background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);
+        }
+        
+        .honey-glow {
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.6), 0 0 80px rgba(255, 215, 0, 0.4);
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.6);
+        }
+        
+        .slide-enter {
+            animation: fadeIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+    </style>
+</head>
+<body class="bg-black overflow-hidden">
+    <!-- Email Login Page -->
+    <div id="loginContainer" class="w-screen h-screen flex items-center justify-center gradient-bg-5 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <img src="images/Globe.svg" class="rotate-safe object-contain disco-spin" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        </div>
+        <div class="bg-white/20 backdrop-blur-xl p-8 rounded-3xl shadow-2xl max-w-md w-full mx-4 z-10">
+            <div class="text-center mb-8">
+                <div class="text-6xl mb-4 bounce-anim">🐝</div>
+                <h1 class="text-white font-black text-4xl md:text-5xl mb-2 neon-text">Your 2025</h1>
+                <h2 class="text-white font-black text-3xl md:text-4xl neon-text">Buzz Wrapped</h2>
+            </div>
+            <div class="mb-6">
+                <label for="emailInput" class="block text-white font-bold text-lg mb-2">Enter your email:</label>
+                <input 
+                    type="email" 
+                    id="emailInput" 
+                    placeholder="your.email@example.com"
+                    class="w-full px-4 py-3 rounded-lg text-gray-900 font-semibold text-lg focus:outline-none focus:ring-4 focus:ring-yellow-400"
+                />
+            </div>
+            <button 
+                id="loginBtn" 
+                class="w-full bg-gradient-to-r from-yellow-300 to-orange-400 text-gray-900 font-black text-xl py-3 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105"
+            >
+                See My Buzz! 🚀
+            </button>
+            <div id="errorMessage" class="hidden mt-4 bg-red-500/90 text-white font-semibold px-4 py-2 rounded-lg text-center"></div>
+        </div>
+    </div>
+    
+    <!-- Loading State -->
+    <div id="loadingContainer" class="hidden w-screen h-screen flex items-center justify-center gradient-bg-1">
+        <div class="text-center">
+            <div class="text-8xl mb-6 bounce-anim">🍯</div>
+            <div class="text-white font-black text-4xl neon-text">Loading your buzz...</div>
+        </div>
+    </div>
+    
+    <!-- Presentation Slides -->
+    <div id="presentationContainer" class="hidden w-screen h-screen relative">
+        <div id="slideContainer" class="w-screen h-screen relative"></div>
+        <div id="progress" class="fixed bottom-3 left-1/2 -translate-x-1/2 bg-black/40 backdrop-blur-lg px-5 py-1.5 rounded-full text-white font-semibold text-xs z-50 pointer-events-none"></div>
+    </div>
+
+    <script>
+        let studentData = null;
+        let allStudentsData = null;
+
+        const criteria = {
+            "styleRangeChategories": [
+                {
+                    "name": "Cross-Pollinator",
+                    "PRmessage": "You've tasted every bit of nectar the Hive has to offer! Your versatility makes the colony vibrant."
+                },
+                {
+                    "name": "Specialist Bee",
+                    "PRmessage": "You found your rhythm and stayed true to it. You are a master of your craft."
+                }
+            ],
+            "hoursRangeCathegories": [
+                {
+                    "name": "Ultimate Queen Bee",
+                    "PRtitle": "The 1% Club",
+                    "Top": "1%",
+                    "PRmessage": "You didn't just dance; you lived in the Hive. With over 70 hours, you are in the top 1% of the entire studio. You are the heartbeat of the colony."
+                },
+                {
+                    "name": "The Elite Swarm",
+                    "PRtitle": "The Iron Sting",
+                    "Top": "5%",
+                    "PRmessage": "The Elite Swarm. You're the backbone of this Hive, putting in 50-70 hours this year. You showed up, you delivered, and you made the studio shine."
+                },
+                {
+                    "name": "Hardworking Worker Bee",
+                    "PRtitle": "The Golden Workers",
+                    "Top": "15%",
+                    "PRmessage": "You are the definition of 'Consistency is Key.' Every hour you put in turned into gold this year. The studio would not be the same without your energy."
+                },
+                {
+                    "name": "The Busy Bee",
+                    "PRtitle": "The Nectar Collectors",
+                    "PRmessage": "The Busy Bees. You're a steady force in our Hive, bringing consistent energy to the floor. Keep buzzing—you're on your way to greatness!"
+                },
+                {
+                    "name": "Nectar Seeker",
+                    "PRtitle": "The Fresh Wings",
+                    "PRmessage": "You're just getting started, and we love the energy you brought this year! Keep exploring, keep dancing, and the honey will flow."
+                }
+            ]
+        };
+
+        function getStudentCategory() {
+            const styles = studentData.favoriteStyle.split(',').map(s => s.trim()).filter(s => s.length > 0);
+            const hours = studentData.totalHours;
+            
+            let styleCategory;
+            if (styles.length > 2) {
+                styleCategory = criteria.styleRangeChategories[0];
+            } else {
+                styleCategory = criteria.styleRangeChategories[1];
+            }
+            
+            let hoursCategory;
+            if (hours > 70) {
+                hoursCategory = criteria.hoursRangeCathegories[0];
+            } else if (hours >= 50) {
+                hoursCategory = criteria.hoursRangeCathegories[1];
+            } else if (hours >= 30) {
+                hoursCategory = criteria.hoursRangeCathegories[2];
+            } else if (hours >= 15) {
+                hoursCategory = criteria.hoursRangeCathegories[3];
+            } else {
+                hoursCategory = criteria.hoursRangeCathegories[4];
+            }
+            
+            return { styleCategory, hoursCategory };
+        }
+
+        function createSlides(styleCategory, hoursCategory) {
+            return [
+            // Slide 1: Epic Intro
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-1 flex flex-col items-center justify-center relative overflow-hidden px-4">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <img src="images/Swirl.svg" class="rotate-safe object-cover opacity-20 disco-spin" style="filter: blur(2px);">
+                        </div>
+                        <div class="absolute top-[15vh] w-32 h-32 md:w-48 md:h-48 disco-spin">
+                            <img src="images/Globe.svg" class="w-full h-full object-contain honey-glow">
+                        </div>
+                        <div class="text-line text-white font-black text-[18vw] md:text-8xl neon-text z-10 mt-32">THE</div>
+                        <div class="text-line bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300 text-purple-900 font-black text-[14vw] md:text-7xl px-8 py-3 rounded-3xl shadow-2xl z-10 mt-4">2025</div>
+                        <div class="text-line text-white font-black text-[16vw] md:text-7xl neon-text z-10 mt-4">Buzz Is In!</div>
+                    </div>
+                `,
+                delays: [0, 500, 1000]
+            },
+            // Slide 2: Personal Greeting
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-2 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute top-6 right-6 w-20 h-20 md:w-32 md:h-32 float-anim">
+                            <img src="images/Globe.svg" class="w-full h-full object-contain opacity-70">
+                        </div>
+                        <div class="absolute bottom-6 left-6 w-24 h-24 md:w-40 md:h-40 float-anim" style="animation-delay: 1s;">
+                            <img src="images/HoneyCombUp.png" class="w-full h-full object-contain opacity-30">
+                        </div>
+                        <div class="text-line text-white font-black text-[12vw] md:text-6xl text-center z-10">The Buzz is in!</div>
+                        <div class="text-line text-white/90 font-semibold text-[6vw] md:text-3xl text-center mt-4 z-10 px-4">Hey fellow dancer and<br>Hive member!</div>
+                        <div class="text-line gradient-text font-black text-[13vw] md:text-7xl text-center mt-6 z-10 px-4">${studentData.studentName}</div>
+                        <div class="text-line text-white font-medium text-[5vw] md:text-2xl text-center mt-6 max-w-[90%] md:max-w-3xl z-10 px-4">We cannot wait to show you what an incredible journey you had with us in 2025!</div>
+                    </div>
+                `,
+                delays: [0, 400, 800, 1200]
+            },
+            // Slide 3: Ready
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-3 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <img src="images/Swirl.svg" class="rotate-safe object-contain pulse-anim">
+                        </div>
+                        <div class="text-line text-white font-black text-[12vw] md:text-6xl text-center z-10 px-4">THE <span class="gradient-text">2025</span></div>
+                        <div class="text-line text-white font-black text-[12vw] md:text-6xl text-center mt-3 z-10 px-4">Buzz Is In!</div>
+                        <div class="text-line text-white font-bold text-[10vw] md:text-5xl text-center mt-12 z-10 bounce-anim px-4" style="animation-delay: 1s;">Ready to see</div>
+                        <div class="text-line text-white font-bold text-[10vw] md:text-5xl text-center mt-3 z-10 px-4">your year in the</div>
+                        <div class="text-line text-white font-bold text-[10vw] md:text-5xl text-center mt-3 z-10 px-4">Hive? 🍯👇</div>
+                    </div>
+                `,
+                delays: [0, 200, 700, 900, 1100]
+            },
+            // Slide 4: Colony Role - Style
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-4 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 grid grid-cols-3 gap-4 p-4 opacity-20">
+                            <img src="images/HoneyCombUp.png" class="w-full h-full object-contain">
+                            <img src="images/HoneyCombUp.png" class="w-full h-full object-contain">
+                            <img src="images/HoneyCombUp.png" class="w-full h-full object-contain">
+                        </div>
+                        <div class="text-line text-gray-900 font-black text-[10vw] md:text-5xl text-center z-10 px-4">THE 2025</div>
+                        <div class="text-line text-white font-black text-[12vw] md:text-6xl text-center mt-2 z-10 neon-text px-4">COLONY ROLES</div>
+                        <div class="text-line bg-white/20 backdrop-blur-lg px-8 py-4 rounded-3xl mt-8 z-10 honey-glow mx-4">
+                            <div class="text-gray-900 font-black text-[11vw] md:text-7xl text-center leading-tight">${styleCategory.name}</div>
+                        </div>
+                        <div class="text-line text-white font-semibold text-[5.5vw] md:text-3xl text-center mt-6 max-w-[90%] md:max-w-4xl z-10 leading-relaxed px-4">${styleCategory.PRmessage}</div>
+                    </div>
+                `,
+                delays: [0, 400, 900, 1300]
+            },
+            // Slide 5: Colony Role - Hours
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-5 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute -top-8 left-0 right-0 w-full h-[60vh]">
+                            <img src="images/HoneyDrip.svg" class="w-full h-full object-cover object-top opacity-50">
+                        </div>
+                        <div class="text-line text-white font-black text-[10vw] md:text-5xl text-center z-10 drop-shadow-2xl px-4">THE 2025</div>
+                        <div class="text-line text-gray-900 font-black text-[12vw] md:text-6xl text-center mt-2 z-10 drop-shadow-2xl px-4">COLONY ROLES</div>
+                        <div class="text-line bg-gradient-to-br from-yellow-300 to-orange-400 px-6 py-4 rounded-3xl mt-8 z-10 shadow-2xl pulse-anim mx-4" style="animation-delay: 1s;">
+                            <div class="text-gray-900 font-black text-[10vw] md:text-7xl text-center leading-tight">${hoursCategory.name}</div>
+                        </div>
+                        ${hoursCategory.Top ? `<div class="text-line bg-white text-gray-900 font-bold text-[7vw] md:text-4xl px-6 py-3 rounded-full mt-6 z-10 shadow-2xl mx-4">Top ${hoursCategory.Top} of the colony 🏆</div>` : `<div class="text-line text-white font-bold text-[7vw] md:text-4xl text-center mt-6 z-10 px-4">${hoursCategory.PRtitle}</div>`}
+                    </div>
+                `,
+                delays: [0, 400, 900, 1300]
+            },
+            // Slide 6: Colony Message
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-6 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <img src="images/Swirl.svg" class="rotate-safe object-cover pulse-anim">
+                        </div>
+                        <div class="text-line text-cyan-300 font-black text-[10vw] md:text-5xl text-center z-10 px-4">THE 2025</div>
+                        <div class="text-line text-white font-black text-[12vw] md:text-6xl text-center mt-2 z-10 neon-text px-4">COLONY ROLES</div>
+                        <div class="text-line bg-white/10 backdrop-blur-xl border-4 border-white/30 px-6 py-6 rounded-3xl mt-8 max-w-[90%] md:max-w-5xl z-10 mx-4">
+                            <div class="text-white font-bold text-[5.5vw] md:text-4xl text-center leading-relaxed">${hoursCategory.PRmessage}</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 400, 900]
+            },
+            // Slide 7: Total Hours - Epic Reveal
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-7 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0">
+                            <img src="images/HoneyCombUp.png" class="absolute top-0 right-0 w-48 h-48 md:w-96 md:h-96 object-contain opacity-20 float-anim">
+                            <img src="images/HoneyCombUp.png" class="absolute bottom-0 left-0 w-40 h-40 md:w-80 md:h-80 object-contain opacity-20 float-anim" style="animation-delay: 1s;">
+                        </div>
+                        <div class="text-line text-pink-600 font-black text-[10vw] md:text-5xl text-center z-10 px-4">THE 2025</div>
+                        <div class="text-line text-gray-900 font-black text-[12vw] md:text-6xl text-center mt-2 z-10 px-4">POLLEN ARCHIVE</div>
+                        <div class="text-line text-gray-800 font-bold text-[9vw] md:text-5xl text-center mt-6 z-10 px-4">Total Hours</div>
+                        <div class="text-line bg-gradient-to-br from-pink-400 to-rose-500 px-12 py-8 rounded-full mt-6 z-10 shadow-2xl pulse-anim mx-4" style="animation-delay: 1.5s;">
+                            <div class="text-white font-black text-[22vw] md:text-9xl text-center neon-text">${studentData.totalHours}</div>
+                        </div>
+                        <div class="text-line text-gray-800 font-semibold text-[7vw] md:text-4xl text-center mt-6 z-10 px-4">Hours of dedication ⚡</div>
+                    </div>
+                `,
+                delays: [0, 400, 800, 1300, 1800]
+            },
+            // Slide 8: Dance DNA
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-8 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <img src="images/Globe.svg" class="rotate-safe object-contain disco-spin">
+                        </div>
+                        <div class="text-line text-orange-900 font-black text-[10vw] md:text-5xl text-center z-10 px-4">THE 2025</div>
+                        <div class="text-line text-white font-black text-[12vw] md:text-6xl text-center mt-2 z-10 neon-text px-4">POLLEN ARCHIVE</div>
+                        <div class="text-line text-white font-black text-[11vw] md:text-6xl text-center mt-8 z-10 px-4">Your Dance DNA 🧬</div>
+                        <div class="text-line bg-white/20 backdrop-blur-xl border-4 border-white/40 px-6 py-6 rounded-3xl mt-6 max-w-[90%] md:max-w-4xl z-10 honey-glow mx-4">
+                            <div class="text-white font-bold text-[6vw] md:text-4xl text-center leading-relaxed">${studentData.favoriteStyle}</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 400, 900, 1400]
+            },
+            // Slide 9: Special Message Intro
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-2 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 opacity-20">
+                            <img src="images/HoneyDrip.svg" class="absolute top-0 w-full h-64 object-cover">
+                        </div>
+                        <div class="text-line text-[20vw] md:text-9xl bounce-anim z-10">⭐</div>
+                        <div class="text-line text-white font-black text-[13vw] md:text-7xl text-center mt-6 z-10 neon-text px-4">A SPECIAL</div>
+                        <div class="text-line text-white font-black text-[13vw] md:text-7xl text-center mt-3 z-10 neon-text px-4">MESSAGE</div>
+                    </div>
+                `,
+                delays: [0, 500, 800]
+            },
+            // Slide 10: Most Active Bees Intro
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-5 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute top-0 w-full h-72">
+                            <img src="images/HoneyDrip.svg" class="w-full h-full object-cover opacity-40">
+                        </div>
+                        <div class="text-line text-[20vw] md:text-9xl bounce-anim z-10">🎉</div>
+                        <div class="text-line text-gray-900 font-black text-[11vw] md:text-6xl text-center mt-6 z-10 px-4">Our Most Active Bees</div>
+                        <div class="text-line bg-white/20 backdrop-blur-xl px-6 py-6 rounded-3xl mt-6 max-w-[90%] md:max-w-4xl z-10 mx-4">
+                            <div class="text-white font-semibold text-[5.5vw] md:text-3xl text-center leading-relaxed">In the Hive, some bees never stop moving! A huge shout-out to our Elite Swarm who spent the most time on the floor this year:</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 500, 1200]
+            },
+            // Slide 11: Most Active Names
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-1 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 grid grid-cols-2 gap-8 p-8 opacity-10">
+                            <img src="images/Globe.svg" class="w-full h-full object-contain float-anim">
+                            <img src="images/Globe.svg" class="w-full h-full object-contain float-anim" style="animation-delay: 1s;">
+                        </div>
+                        <div class="text-line text-white font-black text-[11vw] md:text-6xl text-center mb-8 z-10 neon-text px-4">Our Most Active Bees</div>
+                        <div class="text-line bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-4 rounded-3xl shadow-2xl mb-4 z-10 pulse-anim mx-4">
+                            <div class="text-white font-bold text-[8vw] md:text-5xl text-center">Nitu Alexia</div>
+                        </div>
+                        <div class="text-line bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-4 rounded-3xl shadow-2xl mb-4 z-10 pulse-anim mx-4" style="animation-delay: 0.5s;">
+                            <div class="text-white font-bold text-[8vw] md:text-5xl text-center">Vilculescu Nicole</div>
+                        </div>
+                        <div class="text-line bg-gradient-to-r from-rose-500 to-orange-500 px-6 py-4 rounded-3xl shadow-2xl z-10 pulse-anim mx-4" style="animation-delay: 1s;">
+                            <div class="text-white font-bold text-[8vw] md:text-5xl text-center">Truta Diana</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 500, 900, 1300]
+            },
+            // Slide 12: Most Popular Pollen
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-4 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-20">
+                            <img src="images/Swirl.svg" class="rotate-safe object-cover disco-spin">
+                        </div>
+                        <div class="text-line text-gray-900 font-black text-[11vw] md:text-6xl text-center mb-8 z-10 px-4">The Most Popular Pollen</div>
+                        <div class="text-line bg-white/30 backdrop-blur-xl px-8 py-5 rounded-3xl shadow-2xl mb-4 z-10 honey-glow mx-4">
+                            <div class="text-gray-900 font-black text-[10vw] md:text-6xl text-center">HOT MOVEZZ</div>
+                        </div>
+                        <div class="text-line text-white font-black text-[10vw] md:text-6xl text-center mb-4 z-10">&</div>
+                        <div class="text-line bg-white/30 backdrop-blur-xl px-8 py-5 rounded-3xl shadow-2xl z-10 honey-glow mx-4">
+                            <div class="text-gray-900 font-black text-[10vw] md:text-6xl text-center">K-POP TRAINING</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 500, 900, 1300]
+            },
+            // Slide 13: Thank You
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-2 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 flex items-center justify-center opacity-10">
+                            <img src="images/Globe.svg" class="w-64 h-64 md:w-96 md:h-96 object-contain pulse-anim">
+                        </div>
+                        <div class="text-line text-[20vw] md:text-9xl bounce-anim z-10 mb-6">💛</div>
+                        <div class="text-line text-white font-black text-[15vw] md:text-8xl text-center z-10 neon-text mb-8 px-4">THANK YOU</div>
+                        <div class="text-line bg-white/20 backdrop-blur-xl px-6 py-6 rounded-3xl z-10 mx-4">
+                            <div class="text-white font-bold text-[8vw] md:text-5xl text-center leading-relaxed">For being part of<br>our Hive in 2025</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 500, 900, 1300]
+            },
+            // Slide 14: The End
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-3 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="text-line text-[20vw] md:text-9xl bounce-anim z-10">🐝</div>
+                        <div class="text-line text-white font-black text-[15vw] md:text-8xl text-center mt-6 z-10 neon-text px-4">THE END</div>
+                        <div class="text-line text-white font-bold text-[7vw] md:text-4xl text-center mt-8 max-w-[90%] md:max-w-4xl z-10 leading-relaxed px-4">What a year in the Hive!</div>
+                        <div class="text-line text-white/90 font-semibold text-[6vw] md:text-3xl text-center mt-4 max-w-[90%] md:max-w-4xl z-10 leading-relaxed px-4 mb-16">Our incredible dancers, our buzzing energy.</div>
+                    </div>
+                `,
+                delays: [0, 500, 900, 1300]
+            },
+            // Slide 15: Final Message
+            {
+                html: `
+                    <div class="slide-enter hidden w-full h-full gradient-bg-5 flex flex-col items-center justify-center relative overflow-hidden p-6">
+                        <div class="absolute inset-0 flex items-center justify-center disco-spin opacity-5">
+                            <img src="images/Globe.svg" class="rotate-safe object-contain">
+                        </div>
+                        <div class="text-line text-gray-900 font-black text-[15vw] md:text-8xl text-center mb-8 z-10 px-4">THE END</div>
+                        <div class="text-line bg-white/30 backdrop-blur-xl px-6 py-6 rounded-3xl mb-4 max-w-[90%] md:max-w-4xl z-10 mx-4">
+                            <div class="text-gray-900 font-bold text-[6.5vw] md:text-4xl text-center leading-relaxed">This honey is limitless,<br>this nectar is never-ending.</div>
+                        </div>
+                        <div class="text-line bg-gradient-to-r from-yellow-300 to-orange-400 px-6 py-6 rounded-3xl shadow-2xl max-w-[90%] md:max-w-4xl z-10 honey-glow pulse-anim mx-4" style="animation-delay: 1s;">
+                            <div class="text-gray-900 font-black text-[6.5vw] md:text-4xl text-center leading-relaxed">Keep buzzing, keep dancing,<br>and we will see you next year! 🚀</div>
+                        </div>
+                    </div>
+                `,
+                delays: [0, 500, 1000, 1500]
+            }
+        ];
+        }
+        
+        // Initialize empty slides array (will be populated after login)
+        let slides = [];
+        
+        let currentSlide = 0;
+        let canAdvance = false;
+
+        function showLine(slideElement, lineIndex) {
+            const lines = slideElement.querySelectorAll('.text-line');
+            
+            if (lineIndex < lines.length) {
+                const delay = slides[currentSlide].delays[lineIndex] || 0;
+                
+                setTimeout(() => {
+                    lines[lineIndex].classList.add('visible');
+                    
+                    if (lineIndex === lines.length - 1) {
+                        canAdvance = true;
+                    } else {
+                        showLine(slideElement, lineIndex + 1);
+                    }
+                }, delay);
+            } else {
+                canAdvance = true;
+            }
+        }
+
+        function showSlide(index) {
+            const allSlides = document.querySelectorAll('.slide-enter');
+            allSlides.forEach(slide => slide.classList.add('hidden'));
+            
+            if (allSlides[index]) {
+                allSlides[index].classList.remove('hidden');
+                canAdvance = false;
+                
+                setTimeout(() => {
+                    showLine(allSlides[index], 0);
+                }, 100);
+            }
+            
+            updateProgress();
+        }
+
+        function nextSlide() {
+            if (!canAdvance) return;
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        function updateProgress() {
+            document.getElementById('progress').textContent = `${currentSlide + 1} / ${slides.length}`;
+        }
+
+        // Initialization happens after login via startPresentation()
+
+        // Login functionality
+        async function loadStudentData() {
+            try {
+                const response = await fetch('testData.json');
+                const data = await response.json();
+                allStudentsData = data.students;
+                return true;
+            } catch (error) {
+                console.error('Error loading student data:', error);
+                showError('Failed to load student data. Please refresh the page.');
+                return false;
+            }
+        }
+        
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.classList.remove('hidden');
+            setTimeout(() => {
+                errorDiv.classList.add('hidden');
+            }, 5000);
+        }
+        
+        function findStudentByEmail(email) {
+            const normalizedEmail = email.toLowerCase().trim();
+            return allStudentsData.find(student => 
+                student.email && student.email.toLowerCase().trim() === normalizedEmail
+            );
+        }
+        
+        async function handleLogin() {
+            const emailInput = document.getElementById('emailInput');
+            const email = emailInput.value.trim();
+            
+            if (!email) {
+                showError('Please enter your email address.');
+                return;
+            }
+            
+            // Show loading
+            document.getElementById('loginContainer').classList.add('hidden');
+            document.getElementById('loadingContainer').classList.remove('hidden');
+            
+            // Load data if not already loaded
+            if (!allStudentsData) {
+                const loaded = await loadStudentData();
+                if (!loaded) {
+                    document.getElementById('loadingContainer').classList.add('hidden');
+                    document.getElementById('loginContainer').classList.remove('hidden');
+                    return;
+                }
+            }
+            
+            // Find student
+            const student = findStudentByEmail(email);
+            
+            if (!student) {
+                showError('Email not found. Please check your email and try again.');
+                document.getElementById('loadingContainer').classList.add('hidden');
+                document.getElementById('loginContainer').classList.remove('hidden');
+                return;
+            }
+            
+            // Check if student has data
+            if (!student.favoriteStyle || student.totalHours === 0) {
+                showError('No activity found for this email. Please contact the studio.');
+                document.getElementById('loadingContainer').classList.add('hidden');
+                document.getElementById('loginContainer').classList.remove('hidden');
+                return;
+            }
+            
+            // Set student data and start presentation
+            studentData = student;
+            startPresentation();
+        }
+        
+        function startPresentation() {
+            // Recalculate categories with loaded student data
+            const { styleCategory: newStyleCategory, hoursCategory: newHoursCategory } = getStudentCategory();
+            
+            // Update slides with new student data
+            const container = document.getElementById('slideContainer');
+            container.innerHTML = ''; // Clear existing slides
+            
+            // Recreate slides array with updated student data
+            const updatedSlides = createSlides(newStyleCategory, newHoursCategory);
+            
+            // Add slides to container
+            updatedSlides.forEach(slideData => {
+                const slideElement = document.createElement('div');
+                slideElement.innerHTML = slideData.html;
+                container.appendChild(slideElement.firstElementChild);
+            });
+            
+            // Update slides reference
+            slides.length = 0;
+            slides.push(...updatedSlides);
+            
+            // Show presentation
+            document.getElementById('loadingContainer').classList.add('hidden');
+            document.getElementById('presentationContainer').classList.remove('hidden');
+            
+            // Start first slide
+            currentSlide = 0;
+            showSlide(0);
+        }
+        
+        // Check for email URL parameter
+        function checkURLParameter() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const emailParam = urlParams.get('email');
+            
+            if (emailParam) {
+                // Auto-fill email and trigger login
+                document.getElementById('emailInput').value = emailParam;
+                // Small delay to ensure page is ready
+                setTimeout(() => {
+                    handleLogin();
+                }, 500);
+            }
+        }
+        
+        // Initialize login
+        document.getElementById('loginBtn').addEventListener('click', handleLogin);
+        document.getElementById('emailInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                handleLogin();
+            }
+        });
+        
+        // Preload student data and check URL
+        loadStudentData().then(() => {
+            checkURLParameter();
+        });
+        
+        // Event listeners
+        let isTouchDevice = false;
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight') {
+                e.preventDefault();
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
+                prevSlide();
+            }
+        });
+
+        // Touch handler with left/right zones
+        document.addEventListener('touchend', (e) => {
+            isTouchDevice = true;
+            const screenWidth = window.innerWidth;
+            const touchX = e.changedTouches[0].clientX;
+            
+            if (touchX < screenWidth / 2) {
+                prevSlide();
+            } else {
+                nextSlide();
+            }
+        });
+        
+        // Click handler with left/right zones (only for non-touch devices)
+        document.addEventListener('click', (e) => {
+            if (isTouchDevice) return; // Ignore clicks on touch devices
+            
+            const screenWidth = window.innerWidth;
+            const clickX = e.clientX;
+            
+            if (clickX < screenWidth / 2) {
+                prevSlide();
+            } else {
+                nextSlide();
+            }
+        });
+
+        showSlide(0);
+    </script>
+</body>
+</html>
