@@ -22,11 +22,5 @@ Your Wrapped includes:
 
 This Wrapped includes your activity from September to December 2025.
 
-## Need Help?
-
-If you can't access your Wrapped or have questions, contact the studio at [your-email@example.com]
-
----
-
 **The Hive Dance Studio**  
 Keep buzzing, keep dancing!
