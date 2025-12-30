@@ -580,7 +580,7 @@
         // Login functionality
         async function loadStudentData() {
             try {
-                const response = await fetch('testData.json');
+                const response = await fetch('data.json');
                 const data = await response.json();
                 allStudentsData = data.students;
                 return true;
@@ -756,3 +756,4 @@
     </script>
 </body>
 </html>
+
