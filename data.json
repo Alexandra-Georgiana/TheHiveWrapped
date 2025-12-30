@@ -2,16 +2,305 @@
   "year": 2025,
   "students": [
     {
+      "studentName": "Al-Adwan Samira",
+      "favoriteStyle": "K-pop Training",
+      "totalHours": 29.0,
+      "email": ""
+    },
+    {
       "studentName": "Alistar Alexandra",
       "favoriteStyle": "K-pop Training, Hot Movezz, Vespazz Crew",
       "totalHours": 43.0,
       "email": "alexandrageorgiana.alistar@gmail.com"
     },
     {
-      "studentName": "Popescu Andreea",
-      "favoriteStyle": "Hip Hop, Dancehall, House",
-      "totalHours": 7,
-      "email": "decesuntproasta@gmail.com"
+      "studentName": "Babata Maria",
+      "favoriteStyle": "Street - abs beeg, Street - newbee, Street Dance Basics, K-pop Training, Zumba, Stretch It Out, Afro Manele, Afro Lite, Afro Hype",
+      "totalHours": 33.0,
+      "email": ""
+    },
+    {
+      "studentName": "Balan Valentina",
+      "favoriteStyle": "Hot Movezz, Street Dance Basics, Twerk'n Heelzz, Vespazz Crew, Afro Manele, Heelzz Class",
+      "totalHours": 37.0,
+      "email": "valentinaandreeabalan@gmail.com"
+    },
+    {
+      "studentName": "Balogh Iulia",
+      "favoriteStyle": "K-pop Training, Street Teenzz, Afro Manele, Workshop Kpop Andra",
+      "totalHours": 41.0,
+      "email": "ioana.balogh10@gmail.com"
+    },
+    {
+      "studentName": "Belea Valentina",
+      "favoriteStyle": "Heelzz Class, Afro Lite",
+      "totalHours": 9.0,
+      "email": "b.valentina_belea@yahoo.com"
+    },
+    {
+      "studentName": "Bilc Roxana",
+      "favoriteStyle": "Heelzz Class, Heelzz Class - abs beeg, Heelzz Class - abs beeg",
+      "totalHours": 8.0,
+      "email": "roxanabilc@gmail.com"
+    },
+    {
+      "studentName": "Bota Diana",
+      "favoriteStyle": "Afro Lite, Afro Hype",
+      "totalHours": 7.0,
+      "email": "diana.bota2002@gmail.com"
+    },
+    {
+      "studentName": "Chereches Ilinca",
+      "favoriteStyle": "Afro Lite, Afro Hype, Afro Manele, Vespazz Crew",
+      "totalHours": 15.0,
+      "email": "ilincachereches7@gmail.com"
+    },
+    {
+      "studentName": "Chesches Irina",
+      "favoriteStyle": "HEXA Unit, K-pop Training, Workshop Kpop Andra",
+      "totalHours": 17.0,
+      "email": "cheschesirina@gmail.com"
+    },
+    {
+      "studentName": "Ciureanu Krisztina",
+      "favoriteStyle": "Afro Hype, Afro Manele, Workshop Easy Beezyy, Workshop heelzz/ no heelzz",
+      "totalHours": 11.0,
+      "email": "krisztina.ciureanu@gmail.com"
+    },
+    {
+      "studentName": "Cozma Lilla",
+      "favoriteStyle": "K-pop Training, Mini K-pop",
+      "totalHours": 17.0,
+      "email": "clujza1@gmail.com"
+    },
+    {
+      "studentName": "Cristureanu Dalia",
+      "favoriteStyle": "K-pop Training, Mini K-pop, Workshop Kpop Andra",
+      "totalHours": 25.0,
+      "email": "camelia.cristureanu@gmail.com"
+    },
+    {
+      "studentName": "Dan Alessia",
+      "favoriteStyle": "HEXA Unit, Workshop Kpop Andra, Afro Manele",
+      "totalHours": 12.0,
+      "email": "boldamm05@gmail.com"
+    },
+    {
+      "studentName": "Demian Patricia",
+      "favoriteStyle": "Heelzz Class, Afro Lite",
+      "totalHours": 6.0,
+      "email": "patriciademian13@gmail.com"
+    },
+    {
+      "studentName": "Diaconu Dan",
+      "favoriteStyle": "Afro Lite, Hot Movezz, K-pop Training",
+      "totalHours": 6.0,
+      "email": "danidiaconu34@gmail.com"
+    },
+    {
+      "studentName": "Donisa Cosmina",
+      "favoriteStyle": "Higher Heelzz, Higher Heelzz, Workshop (Rari & Tudor),",
+      "totalHours": 23.0,
+      "email": "donisacosmina@yahoo.com"
+    },
+    {
+      "studentName": "Dourasse Alnoha",
+      "favoriteStyle": "Higher heelzz, Heelzz Class, Hot Movezz",
+      "totalHours": 7.0,
+      "email": "jinane2006@gmail.com"
+    },
+    {
+      "studentName": "Feierdan Cecilia",
+      "favoriteStyle": "Afro Liite",
+      "totalHours": 17.0,
+      "email": "fierdancecilia@yahoo.com"
+    },
+    {
+      "studentName": "Ghise Teodora",
+      "favoriteStyle": "Twerk'n Heelzz, Heelzz Class",
+      "totalHours": 4.0,
+      "email": "ghiseteodora@yahoo.com"
+    },
+    {
+      "studentName": "Hada Sofiâ",
+      "favoriteStyle": "HEXA Unit, Workshop Kpop Andra, Afro Manele. K-pop Training",
+      "totalHours": 17.0,
+      "email": "hadasofia@gmail.com"
+    },
+    {
+      "studentName": "Indolean Martina",
+      "favoriteStyle": "HEXA Unit, Workshop Kpop Andra, Afro Manele. K-pop Training, Afro Hype, Afro Lite",
+      "totalHours": 28.0,
+      "email": "martinaindolean2010@gmail.com"
+    },
+    {
+      "studentName": "Ionas Ingrid",
+      "favoriteStyle": "Mini K-pop",
+      "totalHours": 16.0,
+      "email": "ionasrobert@gmail.com"
+    },
+    {
+      "studentName": "Ionascu Diana",
+      "favoriteStyle": "Afro Manele, Afro Hype, Afro Lite",
+      "totalHours": 4.0,
+      "email": "diana.louise19@gmail.com"
+    },
+    {
+      "studentName": "Luput Sofia",
+      "favoriteStyle": "Higher Heelzz, Twerk'n Heelzz",
+      "totalHours": 9.0,
+      "email": "sofia.luput@icloud.com"
+    },
+    {
+      "studentName": "Mastan Medeea",
+      "favoriteStyle": "Heelzz Class, Zumba, Hot Movezz, Stretch It Out",
+      "totalHours": 17.0,
+      "email": "mastanmedeea@yahoo.com"
+    },
+    {
+      "studentName": "Mihoc Iris",
+      "favoriteStyle": "Higher heelzz, Hot Movezz, Workshop Heelzz/ no heelzz",
+      "totalHours": 24.0,
+      "email": "iris.dmo4@gmail.com"
+    },
+    {
+      "studentName": "Miu Daria",
+      "favoriteStyle": "Vespazz Crew, Higher heelzz, Hot Movezz, Workshop (Rari & Tudor)",
+      "totalHours": 23.0,
+      "email": "miu.daria@gmail.com"
+    },
+    {
+      "studentName": "Moisil Maria",
+      "favoriteStyle": "Higher heelzz, Hot Movezz, Workshop Heelzz/ no heelzz, Twerk'n Heelzz, Heelzz Class",
+      "totalHours": 28.0,
+      "email": "mariamoisil05@gmail.com"
+    },
+    {
+      "studentName": "Nitu Alexia",
+      "favoriteStyle": "Street Dance Basics, Twerk'n Heelzz, Stretch It Out, Hot Movezz, Zumba, Workshop Easy Beezyy, Afro Class - abs beeg, Street - abs beeg, Afro Class - newbeez, Afro Manele, K-pop Training, Vespazz Crew ",
+      "totalHours": 71.0,
+      "email": "alexia.maria.nitu@gmail.com"
+    },
+    {
+      "studentName": "Nitu Laura",
+      "favoriteStyle": "Zumba, Stretch It Out, Heelzz Class, Hot Movezz",
+      "totalHours": 17.0,
+      "email": "lauraanitu99@gmail.com"
+    },
+    {
+      "studentName": "Pavel Andrei",
+      "favoriteStyle": "Hot Movezz, Stretch It Out, Street Dance Basics, Zumba, Afro Class - abs beeg",
+      "totalHours": 10.0,
+      "email": "andrei.pavel.ro@gmail.com"
+    },
+    {
+      "studentName": "Petrea Antonia",
+      "favoriteStyle": "K-pop Training, HEXA Unit, Workshop Kpop Andra, Afro Manele",
+      "totalHours": 22.0,
+      "email": "antopetrea@gmail.com"
+    },
+    {
+      "studentName": "Pop Alexandra",
+      "favoriteStyle": "Higher Heelzz, Hot Movezz, K-pop Training, Workshop Easy Beezyy, Heelzz Class, Vespazz Crew, Afro Lite, Twerk'n Heelzz",
+      "totalHours": 39.0,
+      "email": "alexandrapopalison@gmail.com"
+    },
+    {
+      "studentName": "Pop Maia",
+      "favoriteStyle": "K-pop Training, Mini K-pop, Workshop Kpop Andra",
+      "totalHours": 29.0,
+      "email": "andreipop.design@yahoo.com"
+    },
+    {
+      "studentName": "Retezan Diana",
+      "favoriteStyle": "Vespazz Crew, Twerk'n Heelzz, Hot Movezz, Workshop (Rari & Tudor), Heelzz Class, Afro Hype",
+      "totalHours": 14.0,
+      "email": "retezandiana@gmail.com"
+    },
+    {
+      "studentName": "Roman Bianca",
+      "favoriteStyle": "Hot Movezz, Street Dance Basics, Twerk'n Heelz",
+      "totalHours": 5.0,
+      "email": "bianca.roman@yahoo.com"
+    },
+    {
+      "studentName": "Rotariu Medeea",
+      "favoriteStyle": "Hot Movezz, Heelzz Class - abs beeg, Vespazz Crew",
+      "totalHours": 15.0,
+      "email": "medeearotariu@yahoo.com"
+    },
+    {
+      "studentName": "Schiau Teodora",
+      "favoriteStyle": "Hot Movezz, Higher Heelzz, Vespazz Crew, Afro Manele",
+      "totalHours": 23.0,
+      "email": "schiau_t@yahoo.com"
+    },
+    {
+      "studentName": "Skalska Julia",
+      "favoriteStyle": "Heelzz Class, Higher Heelzz",
+      "totalHours": 14.0,
+      "email": "Jskalskaiya@gmail.com"
+    },
+    {
+      "studentName": "Skalska Mariia",
+      "favoriteStyle": "Vespazz Crew, Hot Movezz, Afro Hype, Higher Heelzz",
+      "totalHours": 20.0,
+      "email": "mariia.skalska@studentmail.transylvania-college.ro"
+    },
+    {
+      "studentName": "Sotnikova Viktoria",
+      "favoriteStyle": "Hot Movezz",
+      "totalHours": 14.0,
+      "email": "vikadin.v@gmail.com"
+    },
+    {
+      "studentName": "Stancu Antonia",
+      "favoriteStyle": "Mini Kpop, K-pop Training",
+      "totalHours": 20.0,
+      "email": "i_dragota@yahoo.com"
+    },
+    {
+      "studentName": "Tolos Iasmina",
+      "favoriteStyle": "Vespazz Crew, Hot Movezz",
+      "totalHours": 16.0,
+      "email": "tolosiasmina104@gmail.com"
+    },
+    {
+      "studentName": "Tomsa Maria",
+      "favoriteStyle": "Afro Lite, Heelzz Class",
+      "totalHours": 6.0,
+      "email": "tomsamaria50@gmail.com"
+    },
+    {
+      "studentName": "Truta Diana",
+      "favoriteStyle": "Afro Hype, Stretch It Out, Zumba, Vespazz Crew, Afro Manele, Street Dance Basics, Afro Lite, Twerk'n Heelzz, Workshop Easy Beezyy, Workshop Heelzz/no heelzz, Afro Class - abs beeg, Street - newbeez, Street - abs beeg, Afro Class - newbeez",
+      "totalHours": 60.0,
+      "email": "diana.trz@gmail.com"
+    },
+    {
+      "studentName": "Vieru Anna",
+      "favoriteStyle": "Afro Class - newbeez, Heelzz Class - abs beeg, Vespazz Crew, Hot Movezz, Zumba, Heelz Workshop (Rari & Stantieru Alexandra), Workshop Heelzz/no heelzz",
+      "totalHours": 38.0,
+      "email": "annavieru9@gmail.com"
+    },
+    {
+      "studentName": "Vilculescu Nicole",
+      "favoriteStyle": "Heelz Workshop (Rari & Stantieru Alexandra), Workshop (Rari & Tudor), K-pop Training, Street - abs beeg, Street - newbeez, Vespazz Crew, Stretch It Out, Zumba, Twerk'n Heelzz, Street Dance Basics, Hot Movezz, Workshop Easy Beezyy, Workshop Heelzz/no heelzz",
+      "totalHours": 70.0,
+      "email": "nicole.vilculescu@gmail.com"
+    },
+    {
+      "studentName": "Vlad Nicol",
+      "favoriteStyle": "Higher Heelzz",
+      "totalHours": 30.6493506493507,
+      "email": "iris.dmo4@gmail.com"
+    },
+    {
+      "studentName": "Maticiuc Anda",
+      "favoriteStyle": "",
+      "totalHours": 0.0,
+      "email": ""
     }
-  ]
+  ],
+  "generatedAt": "2025-12-29T20:50:53.041228"
 }
